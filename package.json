@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "api",
+      "web",
+      "docs",
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@redwoodjs/auth-supabase-setup": "6.1.1",
+    "@redwoodjs/cli-storybook": "6.1.1",
+    "@redwoodjs/core": "6.1.1",
+    "@redwoodjs/studio": "6.1.1",
+    "prettier-plugin-tailwindcss": "0.4.1",
+    "supabase": "^1.88.0"
+  },
+  "eslintConfig": {
+    "extends": "@redwoodjs/eslint-config",
+    "root": true
+  },
+  "engines": {
+    "node": ">=16.x <=18.x",
+    "yarn": ">=3.2.1"
+  },
+  "prisma": {
+    "seed": "yarn rw exec seed"
+  },
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "@mdx-js/rollup": "^2.3.0",
+    "@supabase/supabase-js": "^2.33.1",
+    "@tremor/react": "^3.7.2",
+    "redwood": "^0.0.1"
+  },
+  "scrips": {
+    "supa": "supabase"
+  }
+}

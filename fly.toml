@@ -1,0 +1,15 @@
+app = "my-redwood-project"
+primary_region = "lax"
+
+[env]
+  MIGRATE_ON_BOOT = "true"
+  PORT = "8910"
+  REDWOOD_DISABLE_TELEMETRY = "1"
+
+[http_service]
+  internal_port = 8910
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
